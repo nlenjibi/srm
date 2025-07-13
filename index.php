@@ -7,7 +7,7 @@ if (isLoggedIn()) {
     $user_type = $_SESSION['user_type'];
     switch ($user_type) {
         case 'admin':
-            header("Location: admin/dashboard.php");
+            header("Location: teacher/dashboard.php");
             break;
         case 'teacher':
             header("Location: teacher/dashboard.php");
